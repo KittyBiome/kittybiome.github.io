@@ -1,13 +1,12 @@
 # Site settings
-title: Clean Blog
+title: kittybiome
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+email: team@kittybiome.com
+description: "Kittybiome is a nonprofit company founded with the mission of understanding the microbiology of cats and improving cat health."
+baseurl: ""
+url: "http://www.kittybiome.com"
+twitter_username: kittybiome
+github_username:  kittybiome
 
 # Build settings
 markdown: kramdown
