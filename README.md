@@ -1,2 +1,3 @@
+# Kitty Biome website 
 
-# kittybiome
+Simple static website for Kitty Biome project 

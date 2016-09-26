@@ -1,42 +1,143 @@
----
-layout: homepage
-description: "Learn about your kitty. Contribute to research. Help shelter kitties!"
----
+<!doctype html>
+<html lang=en>
+<head>
+  <title>Kitty Biome</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css"  />
+</head>
+<body>
+  <div class="container">
+    <div class="row header_row">
+      <div class="col-md-6 right">
+        <h1>kitty<span>biome</span></h1>
+        <p class="lead">a catizen science project<br> to study the bacteria<br> that live in cats </p>
+        <button class="join btn btn-lg" href=""><a href="https://fundrazr.com/campaigns/410aC4">Join other catizen scientists</a></button>
+      </div>
+      <div class="col-md-5">
+        <img src="logo.png" width=160 />
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div> <!-- header row -->
+    <div class="video_row row">
+      <div class="col-md-3">
+        <h2>We love cats</h2>
+        <p style="font-size:18px;">
+          We are studying how microbes interact with cat biology, behavior and health. We are conducting the world's largest study of the microbiome of kitties.
+        </p>
+        <button class="join btn" href=""><a href="https://fundrazr.com/campaigns/410aC4">Support the project</a></button>
+      </div>
+      <div class="col-md-6">
 
-        <center><em>As seen in</em></center>
-        <center><img src="{{ site.baseurl }}/img/press.jpg" alt="press"></center>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EaEoSlcPImU"></iframe>
+        </div>
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+      </div>
+      <div class="col-md-3">
+        <h2>We love science</h2>
+        <p style="font-size:18px;">
+          With your help, we will create the world's largest database of cat microbiome data. We will openly share the results of this study with you.
+          <b>We invite everyone who cares about kitties to join this project</b>.
+        </p>
+          <button class="join btn" href=""><a href="https://fundrazr.com/campaigns/410aC4">Enroll your kitty</a></button>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-4">
+        <h2>UC Davis research project</h2>
+        <img src='logo.png' />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>The microbiome is ... </h2>
+        <img src='logo.png' />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>The project</h2>
+        <img src='logo.png' />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn btn-block">Join the project</button>
+      </div>
+    </div> -->
+    <div class="row press">
+      <div class="col-md-3">
+        <h3>CATSTER</h3>
+        <p>
+          <a href="http://catster.com">
+            this type of research is bleeding edge
+          </a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h3>WIRED.uk</h3>
+        <p>
+          <a href="http://www.wired.co.uk/news/archive/2015-05/15/kittybiome-cat-dna-sequencing">
+            find out why your cat is grumpy by sequencing its DNA
+          </a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h3>POPULAR SCIENCE</h3>
+        <p>
+          <a href="http://www.popsci.com/decode-your-kittys-microbiome">
+            first project to look into the feline microbiome
+          </a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h3>SCIENCE</h3>
+        <p>
+          <a href="https://www.sciencemag.org/news/sifter/kittybiome-kickstarter-fund-research-cat-microbes">
+          citizen-science research on the microbiome of cats
+          </a>
+        </p>
+      </div>
+    </div> <!-- press -->
+    <div class="row team">
+        <div class="member col-md-4">
+          <!-- <img src="" /> -->
+          <h3>Holly Ganz, PhD</h3>
+          <h4>Co-founder &amp; CEO</h4>
+          <p>Holly founded the KittyBiome project <a href="https://twitter.com/hollyhganz">@hollyhganz</a></p>
+        </div>
+        <div class="member col-md-4">
+          <!-- <img src="" /> -->
+          <h3>Alana Firl, PhD</h3>
+          <h4>Co-founder &amp; CSO</h4>
+          <p>Alana holds a PhD in Vision Science from UC Berkeley and a BS in
+            Cognitive Neuroscience from Brown University <a href="https://twitter.com/ajfirl">@ajfirl</a></p>
+        </div>
+        <div class="member col-md-4">
+          <h3>Alexandra Martin</h3>
+          <h4>Chief Lab Technician</h4>
+          <p>Alex is an undergraduate at UC Berkeley who has been involved with KittyBiome from the beginning</p>
+        </div>
+      </div> <!-- closes row, team 1  -->
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+      <div class="team row">
+        <div class="member col-md-4">
+          <h3>Jonathan Eisen, PhD</h3>
+          <h4>Scientific Advisor</h4>
+          <p>World-renowned evolutionary biologist and cat enthusiast. Professor/PI at UC Davis <a href="https://twitter.com/phylogenomics">@phylogenomics</a></p>
+        </div>
 
+        <div class="member col-md-4">
+          <h3>Jennifer Gardy, PhD</h3>
+          <h4>Scientific Advisor</h4>
+          <p>Leader, Molecular Epidemiology at the BC Center for Disease Control <a href="https://twitter.com/jennifergardy">@jennifergardy</a></p>
+        </div>
 
+        <div class="member col-md-4">
+          <h3>Adrian Tordiffe, DVM, PhD</h3>
+          <h4>Scientific Advisor</h4>
+          <p>Senior Lecturer, Faculty of Veterinary Science, University of Pretoria, South Africa <a href="https://twitter.com/AdrianTordiffe">@AdrianTordiffe</a></p>
+        </div>
 
+    </div> <!-- team, row -->
+  </div> <!-- container -->
+</body>
+</html>
